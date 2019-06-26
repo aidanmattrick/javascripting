@@ -16,3 +16,4 @@ const eqArrays = function (array1, array2) {
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 assertEqual(eqArrays(["bank\r", 2, 3], ["banker", 2, 3]), true);
+
