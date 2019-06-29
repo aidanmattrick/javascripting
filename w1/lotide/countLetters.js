@@ -9,7 +9,7 @@
 
 const assertArraysEqual = function (array1, array2) {
   if (eqArrays(array1, array2)) {
-    console.log("✅✅✅ Assertion Passed" +  `\"${array1}\" === \"${array2}\"`);
+    console.log("✅✅✅ Assertion Passed" + `\"${array1}\" === \"${array2}\"`);
   }
   else {
     console.log("🛑🛑🛑 Assertion Failed" + `\"${array1}\" !== \"${array2}\"`);
@@ -28,7 +28,7 @@ const countLetters = function (input) {
   let str = input;
   result = {};
   for (let i = 0; i < str.length; i++) {
-    if(str.charAt(i) == " ") continue; 
+    if (str.charAt(i) == " ") continue;
     if (!result[str.charAt(i)]) result[str.charAt(i)] = 1;
     else {
       result[str.charAt(i)] += 1;
@@ -49,7 +49,7 @@ assertArraysEqual(countLetters("lighthouse in the house"), {
   s: 2,
   e: 3,
   n: 1,
-} );
+});
 
 
 console.log(countLetters("lighthouse in the house"));
