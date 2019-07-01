@@ -21,18 +21,18 @@ assertArraysEqual(["banker", 2, 3], ["banker", 2, 3]);
 */
 
 //Middle
-const middle = function (array) {
+const middle = function(array) {
   let result = [];
   let middleIndex = Math.floor(array.length / 2);
   if (array.length < 3) return result;
-  if (array.length % 2 === 0){
+  if (array.length % 2 === 0) {
     result.push(array[middleIndex - 1]);
     result.push(array[middleIndex]);
-  }
-  else{
+  } else {
     result.push(array[middleIndex]);
   }
   return result;
-}
+};
 
-console.log(middle([1, 2]));
+module.exports = middle;
+
