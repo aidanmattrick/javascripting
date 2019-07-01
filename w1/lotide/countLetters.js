@@ -7,16 +7,15 @@
 };
 */
 
-const assertArraysEqual = function (array1, array2) {
+const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log("✅✅✅ Assertion Passed" + `\"${array1}\" === \"${array2}\"`);
-  }
-  else {
+  } else {
     console.log("🛑🛑🛑 Assertion Failed" + `\"${array1}\" !== \"${array2}\"`);
   }
 };
 
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   if (array1.length != array2.length) return false;
   for (let i = 0; i < array1.length; i++) {
     if (array1[i] !== array2[i]) return false;
@@ -24,9 +23,9 @@ const eqArrays = function (array1, array2) {
   return true;
 };
 
-const countLetters = function (input) {
+const countLetters = function(input) {
   let str = input;
-  result = {};
+  let result = {};
   for (let i = 0; i < str.length; i++) {
     if (str.charAt(i) == " ") continue;
     if (!result[str.charAt(i)]) result[str.charAt(i)] = 1;
@@ -37,7 +36,7 @@ const countLetters = function (input) {
   return result;
 };
 
-
+/*
 assertArraysEqual(countLetters("lighthouse in the house"), {
   l: 1,
   i: 2,
@@ -50,6 +49,7 @@ assertArraysEqual(countLetters("lighthouse in the house"), {
   e: 3,
   n: 1,
 });
+*/
 
+module.exports = countLetters;
 
-console.log(countLetters("lighthouse in the house"));
